@@ -15,6 +15,34 @@ TextInputEmail:{
     borderWidth:1,
     marginTop:20,
     borderRadius:10
+},
+passwordView:{
+    borderColor:"black",
+    borderWidth:1,
+    borderRadius:10,
+    marginTop:"10%",
+},
+LoginButton:{
+    backgroundColor:"black",
+   marginVertical:"12%",
+   paddingHorizontal:"10%",
+   paddingVertical:"4%",
+   borderRadius:10
+},loginText:{
+    color:"white",
+    textAlign:"center",
+    fontSize:20,
+    fontWeight:"bold",
+},
+Login:{
+    textAlign:"center",
+    fontSize:20,
+    fontWeight:"500"
+},
+facbookView:{
+    flexDirection:'row',
+    justifyContent:"space-between",
+    alignItems:'center'
 }
 })
 export default style

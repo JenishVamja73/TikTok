@@ -19,7 +19,7 @@ const Login = () => {
             <Text style={style.TextWelcome}> to  see you agin</Text>
             </View>
             <View>
-                <TextInput style={style.TextInputEmail}></TextInput>
+                <TextInput style={style.TextInputEmail} placeholder="enter your email"></TextInput>
             </View>
       
     </View>

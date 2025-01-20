@@ -42,7 +42,13 @@ Login:{
 facbookView:{
     flexDirection:'row',
     justifyContent:"space-between",
-    alignItems:'center'
+    alignItems:'center',
+    marginVertical:"8%"
+},
+facebookIcon:{
+    borderWidth:1,
+    borderColor:"black",
+    padding:2
 }
 })
 export default style

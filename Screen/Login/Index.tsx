@@ -3,6 +3,7 @@
 import React from "react";
 import { Pressable, Text, TextInput, View } from "react-native";
 import AntDesign from 'react-native-vector-icons/AntDesign';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import style from "./style";
 
 
@@ -36,11 +37,20 @@ const Login = () => {
         <Text style={style.Login}>Or Login with</Text>
       </View>
       <View style={style.facbookView}>
-        <View>
-          <AntDesign name = "facebook-square" color={"blue"} size={20}/>
-        </View>
+        <Pressable >
+          <FontAwesome name = "facebook-square" color={"blue"} size={35}/>
+        </Pressable>
+        <Pressable >
+          <FontAwesome name = "google-plus-square" color={"red"} size={35}/>
+        </Pressable>
+        <Pressable style={{borderRadius:10,borderColor:'black',}} >
+          <FontAwesome name = "apple" color={"black"} size={35}/>
+        </Pressable>
 
       </View>
+      <View style={{marginVertical:"5%"}}>
+  <Text style={{textAlign:"center",fontSize:19}}>Do have an account ? <Pressable><Text style={{top:"3%",color:"blue",fontSize:16}}>Register Now</Text></Pressable></Text>
+</View>
     </View>
   );
 };

@@ -11,7 +11,8 @@ const Navgtion = () => {
     <>
      <NavigationContainer>
       <Stack.Navigator initialRouteName="login">
-        <Stack.Screen name="login" component={Login} />
+        <Stack.Screen name="login" component={Login} options={{ headerShown: false }} 
+        />
 
       </Stack.Navigator>    
       </NavigationContainer>

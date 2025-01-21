@@ -4,7 +4,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import style from "./style";
 
-const SignIN = ()=>{
+const SignIN = ({ navigation })=>{
     return(
         <>
         <Pressable style={{marginHorizontal:"5%",marginVertical:"2%"}}>
@@ -14,8 +14,8 @@ const SignIN = ()=>{
             
 
             <View>
-        <Text style={style.TextWelcome}>Hello Register to get </Text>
-            <Text style={style.TextWelcome}> Started</Text>
+        <Text style={style.TextWelcome}>Hello, user</Text>
+            <Text style={[style.TextWelcome,{right:"3%"}]}> Register to get Started</Text>
             </View>
             <View>
                 <TextInput style={style.TextInputEmail} placeholder="userName" keyboardType="email-address"></TextInput>
@@ -49,7 +49,7 @@ const SignIN = ()=>{
 
       </View>
       <View style={{marginVertical:"5%"}}>
-  <Text style={{textAlign:"center",fontSize:19}}>Do have an account ? <Pressable  onPress={() => navigation.navigate('signin')}><Text style={{top:"3%",color:"blue",fontSize:16}}>Login Now</Text></Pressable></Text>
+  <Text style={{textAlign:"center",fontSize:19}}>Do have an account ? <Pressable  onPress={() => navigation.navigate('Home')}><Text style={{top:"3%",color:"blue",fontSize:16}}>Login Now</Text></Pressable></Text>
 </View>
         </View>
         </>

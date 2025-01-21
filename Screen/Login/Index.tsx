@@ -9,7 +9,7 @@ import style from "./style";
 
 
 
-const Login = () => {
+const Login = ({ navigation }) => {
   return (
     <View style={style.conatra}>
         <View>
@@ -49,7 +49,7 @@ const Login = () => {
 
       </View>
       <View style={{marginVertical:"5%"}}>
-  <Text style={{textAlign:"center",fontSize:19}}>Do have an account ? <Pressable><Text style={{top:"3%",color:"blue",fontSize:16}}>Register Now</Text></Pressable></Text>
+  <Text style={{textAlign:"center",fontSize:19}}>Do have an account ? <Pressable  onPress={() => navigation.navigate('signin')}><Text style={{top:"3%",color:"blue",fontSize:16}}>Register Now</Text></Pressable></Text>
 </View>
     </View>
   );
